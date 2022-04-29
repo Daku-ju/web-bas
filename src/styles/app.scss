@@ -1,12 +1,40 @@
 @import 'utils/variables';
 @import 'components/type';
 
+:root{
+
+}
+
+/*font*/
+@font-face {
+    font-family: "Author";
+    src: url("../assets/fonts/Author-Variable.woff2") format("woff2"),
+           url("../assets/fonts/Author-Variable.woff") format("woff");
+   }
+
+
 ul{
     padding: 0px;
+    list-style: none;
 }
+
 a{
     text-decoration: none;
 }
+
 .bouton--accueil{
     background-color: #111111;
 }
+
+.title{
+    font-family: "Author", sans-serif;
+    color: #111111;
+}
+
+.title--big{
+    font-size: 80px;
+    font-variation-settings: 'wght' 600;
+}
+
+
+
