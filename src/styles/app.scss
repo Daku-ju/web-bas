@@ -96,7 +96,7 @@ body{
 }
 
 .title--big{
-    font-size: 37.9px;
+    font-size: 87.17px;
     font-variation-settings: 'wght' 600;
     margin-top: 32px;
     margin-bottom: 0;
@@ -118,7 +118,7 @@ body{
 
 .header__nav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 header svg{
@@ -126,9 +126,17 @@ header svg{
 }
 
 .link{
-    padding-left: 5px;
+    padding-left: 48px;
 }
 
+.menu :first-child{
+    padding-left: 0;
+}
+
+.menu{
+    padding-bottom: 32px;
+    margin-bottom: 0;
+}
 
 
 
