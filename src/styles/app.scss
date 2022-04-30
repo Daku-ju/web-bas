@@ -176,9 +176,11 @@ header svg{
 }
 
 .img--bug{
-    grid-row-start: 4;
-    position: relative;
-    bottom: 60px;
+    object-fit: cover;
+    width: 800px;
+    height: 500px;
+    border-radius: 50px;
+    border: solid 1px var(--color-text);
 }
 
 @media (min-width: 768px){
@@ -368,8 +370,35 @@ header svg{
             margin-top: 145px;
         }
     }
+    .section__flex{
+        display: flex;
+        gap: 100px;
+        margin-bottom: 5em;
+    }
+    .section__flex--monnaie{
+        max-width: 1000px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .section__flex--createurs{
+        max-width: 1000px;
+    }
+    .block__img--createur{
+        text-align: right;
+        transform: translateY(-10em);
+    }
+    .text__erased{
+        opacity: 50%;
+        font-size: 16px;
+    }
+    .link__special{
+        padding: 0;
+        text-decoration: underline;
+        font-style: italic;
+    }
 
-    .sectionAventure__box1{
+    .sectionAventure__box1, .section__box{
+
         border: 1px solid #111;
         border-radius: 41px;
         padding: 55px 288px 80px 68px;
@@ -397,6 +426,20 @@ header svg{
             background-size: contain;
             background-repeat: no-repeat;
         }
+        .card--special{
+            position: absolute;
+            background-color: #FFF2E6;
+            border: solid 1px var(--color-text);
+            border-radius: 50px;
+
+            padding: 50px 175px;
+            right: -350px;
+            top: 120px;
+        }
+    }
+    .section__box{
+        position: block;
+        padding: 50px;
     }
 
     
