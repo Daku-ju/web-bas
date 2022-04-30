@@ -21,7 +21,13 @@
 
 body{
     font-size: var(--font-size_small);
-    margin: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -32,7 +38,6 @@ ul{
 
 a, a:visited{
     text-decoration: none;
-    color: #111;
 }
 
 
@@ -44,11 +49,12 @@ li{
     background-color: #111111;
     color: #FFF2E6;
     display: block;
-    padding: 10px;
+    padding: 10px 30px 0px 10px;
     max-width: 100px;
-    border-radius: 10px;
+    border-radius: 41px;
     text-align: center;
     max-height: 30px;
+    text-transform: lowercase;
 }
 
 .header{
@@ -66,6 +72,9 @@ li{
     grid-column-start: 1;
 }
 .mgrid-end5{
+    grid-column-end: 5;
+}
+.mgrid-end6{
     grid-column-end: 5;
 }
 
@@ -216,6 +225,30 @@ header svg{
 
 
 @media (min-width: 768px){
+
+    .dgrid-start1{
+        grid-column-start: 1;
+    }
+    .dgrid-end3{
+        grid-column-end: 3;
+    }
+    .dgrid-end5{
+        grid-column-end: 5;
+    }
+    .dgrid-end6{
+        grid-column-end: 5;
+    }
+    
+    .dgrid-start5{
+        grid-column-start: 5;
+    }
+    .dgrid-start6{
+        grid-column-start: 6;
+    }
+    .dgrid-end-1{
+        grid-column-end: -1;
+    }
+
     .header__nav {
         justify-content: space-between;
         margin-left: 34px;
@@ -237,7 +270,55 @@ header svg{
         flex-direction: row;
     }
 
-    button{
-        display: none;
+    .header--right{
+        background-color: #111;
+        grid-row: 1 / 5 span;
+    }
+
+    .title--big{
+        font-size: 84px;
+        line-height: 1.3;
+        font-variation-settings: 'wght' 600;
+        margin-top: 32px;
+        margin-bottom: 0;
+        padding: 0px 55px;
+    }
+
+    .bouton--accueil{
+        margin-left: 55px;
+        color: #FFF2E6;
+        max-width: 200px;
+        padding-right: 10px;
+    }
+
+    .nav{
+        margin-top: 46px;
+        margin-left: 55px;
+    }
+
+    .nav--logo{
+        height: 23px;
+        padding: 10px;
+        padding-right: 51px;
+    }
+
+    .nav__links{
+        display: flex;
+        margin: 0;
+
+        .link{
+            padding: 15px;
+        }
+
+        .link--color{
+            color: #111;
+        }
+    }
+
+    .link--active{
+        background-image: url(../assets/images/active.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 7px;
     }
 }
