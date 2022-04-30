@@ -237,4 +237,34 @@ header svg{
         background-repeat: no-repeat;
         background-position: center 7px;
     }
+
+    .boxes{
+        display: flex;
+        font-family: "Author";
+        text-transform: uppercase;
+        font-variation-settings: 'wght' 700;
+        font-style: italic;
+        font-size: 35.5px;
+        margin-top: 139px;
+        justify-content: space-around;
+        max-width: 1200px;
+
+        .boxes__el{
+            padding: 60px 50px;
+            border: 1px solid #111;
+            border-radius: 62px;
+            max-width: 340px;
+            height: 100px;
+            margin: 0px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .main{
+        margin: auto;
+        max-width: 1450px;
+        padding: 16px;
+    }
 }
