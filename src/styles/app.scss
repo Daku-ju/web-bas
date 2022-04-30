@@ -70,9 +70,18 @@ header{
     height: auto;
 }
 
+.main--grid{
+    display: grid;
+    grid-template-columns: repeat( 8, 1fr);
+}
+
 .nav{
     display: flex;
 
+}
+
+.mgrid-end6{
+    grid-column-end: 6;
 }
 
 .mgrid-start1{
@@ -88,6 +97,11 @@ header{
 .mgrid-start6{
     grid-column-start: 6;
 }
+
+.mgrid-start5{
+    grid-column-start: 5;
+}
+
 .mgrid-end-1{
     grid-column-end: -1;
 }
@@ -154,6 +168,18 @@ header svg{
     margin-bottom: 0;
 }
 
+.createurs{
+    border-style: solid;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.img--bug{
+    grid-row-start: 4;
+    position: relative;
+    bottom: 60px;
+}
 
 @media (min-width: 768px){
 
@@ -245,6 +271,7 @@ header svg{
         padding: 0px 55px;
     }
 
+      
     .bouton--accueil{
         margin-left: 55px;
         color: #FFF2E6;
