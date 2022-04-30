@@ -219,6 +219,53 @@ header svg{
         grid-column-end: -1;
     }
 
+    .card__nft{
+        width: 500px;
+        border: solid 1px var(--color-text);
+        border-radius: 100px;
+    }
+    .img__nft{
+        width: 100%;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+    }
+    .img__marchal{
+        background: radial-gradient(50% 50% at 50% 50%, #E2E4E5 0%, #8CC1DE 100%);
+    }
+    .img__tournay{
+        background: radial-gradient(50% 50% at 50% 50%, #E5E4E2 0%, #DEB88C 100%);
+    }
+    .img__terranova{
+        background: radial-gradient(50% 50% at 50% 50%, #E4E2E5 0%, #B58CDE 100%);
+    }
+    .img__bourgaux{
+        background: radial-gradient(50% 50% at 50% 50%, #E3E5E2 0%, #8CDE8F 100%);
+    }
+    .img__thronte{
+        background: radial-gradient(50% 50% at 50% 50%, #E5E2E3 0%, #DE8CAA 100%);
+    }
+    .text__nft{
+        text-align: center;
+        font-size: 26.66px;
+        margin: 3px;
+    }
+    .text__nft--name{
+        font-weight: 800;
+    }
+    .price__nft{
+        margin-top: 1em;
+        margin-bottom: 2em;
+
+        font-weight: 700;
+        font-size: 35.54px;
+    }
+    .section__nft{
+        margin-bottom: 5em;
+        display: flex;
+        gap: 150px;
+        justify-content: center;
+    }
+
     .footer__list--second, .footer__list, .footer{
         display: flex;
     }
