@@ -150,6 +150,11 @@ header svg{
 
 @media (min-width: 768px){
 
+    .gridArea{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
     .dgrid-start1{
         grid-column-start: 1;
     }
@@ -162,6 +167,12 @@ header svg{
     .dgrid-end6{
         grid-column-end: 5;
     }
+    .dgrid-end7{
+        grid-column-end: 7;
+    }
+    .dgrid-end8{
+        grid-column-end: 8;
+    }
     
     .dgrid-start5{
         grid-column-start: 5;
@@ -171,6 +182,14 @@ header svg{
     }
     .dgrid-end-1{
         grid-column-end: -1;
+    }
+
+    .header{
+        .title--big{
+            margin-top: 32px;
+            margin-bottom: 0;
+            padding: 0px 55px;
+        }
     }
 
     .header__nav {
@@ -196,9 +215,6 @@ header svg{
         font-size: 84px;
         line-height: 1.3;
         font-variation-settings: 'wght' 600;
-        margin-top: 32px;
-        margin-bottom: 0;
-        padding: 0px 55px;
     }
 
     .bouton--accueil{
@@ -248,7 +264,6 @@ header svg{
         font-size: 35.5px;
         margin-top: 139px;
         justify-content: space-around;
-        max-width: 1200px;
 
         .boxes__el{
             padding: 60px 50px;
@@ -268,4 +283,50 @@ header svg{
         max-width: 1450px;
         padding: 16px;
     }
+
+    .undertitle{
+        font-variation-settings: 'wght' 300;
+        font-style: italic;
+        font-size: 47px;
+        margin: 9px 0 0 0;
+        margin-bottom: 118px;
+    }
+
+    .sectionAventure{
+        .title--big{
+            margin-top: 145px;
+        }
+    }
+
+    .sectionAventure__box1{
+        border: 1px solid #111;
+        border-radius: 41px;
+        padding: 55px 288px 80px 68px;
+        font-size: 27px;
+        line-height: 1.5;
+        position: relative;
+
+        .title--average{
+            font-variation-settings: 'wght' 700;
+            font-size: 47px;
+            margin: 0 0 35px 0;
+        }
+
+        .bouton{
+            max-width: 300px;
+            padding-bottom: 17px;
+        }
+
+        .card{
+            padding: 300px;
+            position: absolute;
+            right: -350px;
+            top: 120px;
+            background-image: url(../assets/images/Card.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    
 }
