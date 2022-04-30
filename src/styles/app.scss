@@ -1,10 +1,6 @@
 @import 'utils/variables';
 @import 'components/type';
 
-:root{
-
-}
-
 /*font*/
 @font-face {
     font-family: "Author";
@@ -12,6 +8,23 @@
            url("../assets/fonts/Author-Variable.woff") format("woff");
    }
 
+/*variables*/
+:root{ 
+    --color-bg: #FFF2E6;
+    --color-text: #111;
+
+    --font-size_small: 16px;
+    --font-size_middle: 18px;
+    --font-size_big: 20px;
+}
+
+body{
+    font-size: var(--font-size_small);
+}
+
+.html--beige{
+    background-color: var(--color-bg);
+}
 
 ul{
     padding: 0px;
@@ -32,9 +45,27 @@ a{
 }
 
 .title--big{
-    font-size: 80px;
+    font-size: 56.83px;
     font-variation-settings: 'wght' 600;
 }
+
+header{
+    display: inline-flex;
+}
+
+.header__nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header svg{
+    width: 70px;
+}
+
+.link{
+    padding-left: 5px;
+}
+
 
 
 
