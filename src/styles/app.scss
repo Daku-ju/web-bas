@@ -1,5 +1,5 @@
 @import 'utils/variables';
-@import 'components/type';
+
 
 /*font*/
 @font-face {
@@ -33,6 +33,61 @@ ul{
 
 a{
     text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.bouton{
+    background-color: #111111;
+    color: #FFF2E6;
+    display: block;
+    padding: 10px;
+    max-width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 30px;
+
+
+}
+.link{
+    padding: 25px;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat( 8, 1fr);
+    height: 100vh;
+}
+.nav{
+    display: flex;
+
+}
+
+.mgrid-start1{
+    grid-column-start: 1;
+}
+.mgrid-end5{
+    grid-column-end: 5;
+}
+
+.mgrid-start6{
+    grid-column-start: 6;
+}
+.mgrid-end-1{
+    grid-column-end: -1;
+}
+.box--beiche{
+    background-color: beige;
+    top: -500px;
+    position: absolute;
+}
+
+.bouton--accueil::after{
+    content: " →";
+}
+
+body{
+    background-color: #FFF2E6;
+    color: #111111;
 }
 
 .bouton--accueil{
